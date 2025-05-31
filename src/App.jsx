@@ -10,6 +10,7 @@ function App() {
   console.log(formData);
   return (
     <>
+      <BrowserRouter basename="/Link-Portfoilo">
       <Router>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={<RegistrationPage />} />
       </Routes>
       </Router>
+      </BrowserRouter>
     </>
   )
 }
