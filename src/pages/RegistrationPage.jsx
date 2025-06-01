@@ -22,7 +22,7 @@ function RegistrationPage() {
     console.log("Form submitted:", data);
     setFormdata(data); // Appends instead of replaces
     reset();
-    navigate("/");
+    navigate("/profilePreview");
   };
 
 
