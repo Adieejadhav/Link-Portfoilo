@@ -5,9 +5,11 @@ import App from './App.jsx';
 import { FormProvider } from '../services/formContext.jsx';
 import './styles/index.css';
 
+const basename = import.meta.env.VITE_PUBLIC_URL;
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Link-Portfoilo">
+    <BrowserRouter basename={basename}>
       <FormProvider>
         <App />
       </FormProvider>
