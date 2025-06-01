@@ -6,7 +6,7 @@ import { useFormData } from "../../services/formContext";
 
 function RegistrationPage() {
 
-  const { setFormdata } = useFormData();
+  const { setFormData } = useFormData();
   const navigate = useNavigate();
   
   const {
@@ -20,7 +20,7 @@ function RegistrationPage() {
 
     const onSubmit = (data) => {
     console.log("Form submitted:", data);
-    setFormdata(data); 
+    setFormData(data); 
     reset();
     navigate("/profilePreview");
   };
