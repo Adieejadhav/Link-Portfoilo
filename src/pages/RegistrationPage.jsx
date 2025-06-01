@@ -20,7 +20,7 @@ function RegistrationPage() {
 
     const onSubmit = (data) => {
     console.log("Form submitted:", data);
-    setFormdata(data); // Appends instead of replaces
+    setFormdata(data); 
     reset();
     navigate("/profilePreview");
   };

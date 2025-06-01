@@ -9,13 +9,11 @@ function App() {
 
   console.log(formData);
   return (
-    <BrowserRouter basename={import.meta.env.PROD ? "/Link-Portfoilo" : ""}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/profilePreview" element={<ProfilePreview />} />
         <Route path="/register" element={<RegistrationPage />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
